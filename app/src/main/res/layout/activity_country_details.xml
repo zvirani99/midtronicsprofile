@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingStart="24dp"
+    android:paddingEnd="24dp"
+    tools:context=".CountryDetails">
+
+    <!--    Back Button-->
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/countrydetails_back_button"
+        android:layout_width="52dp"
+        android:layout_height="52dp"
+        android:layout_marginTop="12dp"
+        app:iconGravity="textStart"
+        app:iconPadding="0dp"
+        app:icon="@drawable/ic_arrow_left" />
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/countrydetails_back_button"
+        app:contentPadding="10dp"
+        app:cardUseCompatPadding="true">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <!--    Heading-->
+            <TextView
+                android:id="@+id/countrydetails_heading"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="24sp"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:textAlignment="center"
+                android:text="{Country Name}"
+                />
+
+            <!--    Country Details-->
+            <!--    Capital-->
+            <TextView
+                android:id="@+id/countrydetails_capital"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/countrydetails_heading"
+                android:layout_marginTop="10dp"
+                android:textSize="16sp"
+                android:textColor="@color/black"
+                android:text="Capital: {capital}"
+                />
+
+            <!--    Population-->
+            <TextView
+                android:id="@+id/countrydetails_population"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/countrydetails_capital"
+                android:layout_marginTop="10dp"
+                android:textSize="16sp"
+                android:textColor="@color/black"
+                android:text="Population: {population}"
+                />
+
+            <!--    Area-->
+            <TextView
+                android:id="@+id/countrydetails_area"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/countrydetails_population"
+                android:layout_marginTop="10dp"
+                android:textSize="16sp"
+                android:textColor="@color/black"
+                android:text="Area: {area}"
+                />
+
+            <!--    Region-->
+            <TextView
+                android:id="@+id/countrydetails_region"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/countrydetails_area"
+                android:layout_marginTop="10dp"
+                android:textSize="16sp"
+                android:textColor="@color/black"
+                android:text="Region: {region}"
+                />
+
+            <!--    Subregion-->
+            <TextView
+                android:id="@+id/countrydetails_subregion"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/countrydetails_region"
+                android:layout_marginTop="10dp"
+                android:textSize="16sp"
+                android:textColor="@color/black"
+                android:text="Subregion: {subregion}"
+                />
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+
+
+</RelativeLayout>

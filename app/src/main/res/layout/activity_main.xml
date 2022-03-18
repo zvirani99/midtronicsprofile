@@ -1,0 +1,272 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/countries_button"
+        android:layout_width="52dp"
+        android:layout_height="52dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginStart="24dp"
+        app:iconGravity="textStart"
+        app:iconPadding="0dp"
+        app:icon="@drawable/ic_globe" />
+
+    <ImageView
+        android:id="@+id/profile_image"
+        android:layout_width="500dp"
+        android:layout_height="300dp"
+        android:src="@drawable/profile_image" />
+
+    <TextView
+        android:id="@+id/profile_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/profile_image"
+        android:layout_centerHorizontal="true"
+        android:textSize="32sp"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:text="Zeeshan Virani"
+        />
+
+    <ScrollView
+        android:id="@+id/resume"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/profile_name"
+        android:layout_marginTop="14dp">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/education_card"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="24dp"
+                android:layout_marginEnd="24dp"
+                app:cardUseCompatPadding="true"
+                app:contentPadding="10dp" >
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" >
+
+                    <TextView
+                        android:id="@+id/education_heading"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="24sp"
+                        android:textColor="@color/black"
+                        android:textStyle="bold"
+                        android:text="Education"
+                        />
+
+                    <View
+                        android:id="@+id/education_divider"
+                        android:layout_width="match_parent"
+                        android:layout_height="2dp"
+                        android:layout_below="@id/education_heading"
+                        android:layout_marginBottom="6dp"
+                        android:background="@color/black" />
+
+                    <TextView
+                        android:id="@+id/education_university"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/education_divider"
+                        android:textSize="16sp"
+                        android:textColor="@color/black"
+                        android:text="Texas A&amp;M University" />
+
+                    <TextView
+                        android:id="@+id/education_years"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/education_university"
+                        android:textSize="16sp"
+                        android:textColor="@color/black"
+                        android:text="2018 - 2022" />
+
+                    <TextView
+                        android:id="@+id/education_major"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/education_years"
+                        android:textSize="16sp"
+                        android:textColor="@color/black"
+                        android:text="BS in Computer Engineering" />
+
+                    <TextView
+                        android:id="@+id/education_gpa"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/education_major"
+                        android:textSize="16sp"
+                        android:textColor="@color/black"
+                        android:text="GPA: 3.8/4.0" />
+
+                </RelativeLayout>
+
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/work_card"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/education_card"
+                android:layout_marginTop="14dp"
+                android:layout_marginStart="24dp"
+                android:layout_marginEnd="24dp"
+                app:cardUseCompatPadding="true"
+                app:contentPadding="10dp" >
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" >
+
+                    <TextView
+                        android:id="@+id/work_heading"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="24sp"
+                        android:textColor="@color/black"
+                        android:textStyle="bold"
+                        android:text="Work Experience"
+                        />
+
+<!--                    Undergraduate Researcher-->
+                    <View
+                        android:id="@+id/work_divider_one"
+                        android:layout_width="match_parent"
+                        android:layout_height="2dp"
+                        android:layout_below="@id/work_heading"
+                        android:layout_marginBottom="6dp"
+                        android:background="@color/black" />
+
+                    <TextView
+                        android:id="@+id/work_one_position"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/work_divider_one"
+                        android:textSize="16sp"
+                        android:textColor="@color/black"
+                        android:textStyle="bold"
+                        android:text="Undergraduate Researcher" />
+
+                    <TextView
+                        android:id="@+id/work_one_years"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/work_one_position"
+                        android:textSize="16sp"
+                        android:textColor="@color/black"
+                        android:text="2021 - Present" />
+
+                    <TextView
+                        android:id="@+id/work_one_description"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/work_one_years"
+                        android:textSize="16sp"
+                        android:textColor="@color/black"
+                        android:text="Evaluated various methods of Hidden Markov Models using Python to create an interactive story telling program." />
+
+<!--                    CryptoWorld-->
+                    <View
+                        android:id="@+id/work_divider_two"
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_below="@id/work_one_description"
+                        android:layout_marginTop="6dp"
+                        android:layout_marginBottom="6dp"
+                        android:background="@color/black" />
+
+                    <TextView
+                        android:id="@+id/work_two_position"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/work_divider_two"
+                        android:textSize="16sp"
+                        android:textColor="@color/black"
+                        android:textStyle="bold"
+                        android:text="CryptoWorld" />
+
+                    <TextView
+                        android:id="@+id/work_two_years"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/work_two_position"
+                        android:textSize="16sp"
+                        android:textColor="@color/black"
+                        android:text="2021" />
+
+                    <TextView
+                        android:id="@+id/work_two_description"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/work_two_years"
+                        android:textSize="16sp"
+                        android:textColor="@color/black"
+                        android:text="Used Bootstrap, JavaScript and Flask in conjunction with CoinCap, Coinbase, HighCharts, and News APIs to create an education cryptocurrency website." />
+
+<!--                    Office Depot-->
+                    <View
+                        android:id="@+id/work_divider_three"
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_below="@id/work_two_description"
+                        android:layout_marginTop="6dp"
+                        android:layout_marginBottom="6dp"
+                        android:background="@color/black" />
+
+                    <TextView
+                        android:id="@+id/work_three_position"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/work_divider_three"
+                        android:textSize="16sp"
+                        android:textColor="@color/black"
+                        android:textStyle="bold"
+                        android:text="Office Depot" />
+
+                    <TextView
+                        android:id="@+id/work_three_years"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/work_three_position"
+                        android:textSize="16sp"
+                        android:textColor="@color/black"
+                        android:text="2018 - 2020" />
+
+                    <TextView
+                        android:id="@+id/work_three_description"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/work_three_years"
+                        android:textSize="16sp"
+                        android:textColor="@color/black"
+                        android:text="Handled over $5,000 in cash and credit card transactions daily.
+                        \nBoosted subscription sales by 10%.
+                        \nOrganized inventory and kept store appealing to clients.
+                        \nRepaired phones and computers for customers." />
+
+                </RelativeLayout>
+
+
+            </androidx.cardview.widget.CardView>
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+</RelativeLayout>
