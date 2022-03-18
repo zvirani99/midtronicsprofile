@@ -36,7 +36,7 @@ class CountrySelection : AppCompatActivity() {
 
         // Update List of Countries based on what is entered into the search bar dynamically
         searchBar.addTextChangedListener {
-            val tempListOfCountries = mutableListOf<String>()
+            val tempListOfCountries = ArrayList<String>()
             for ( i in listOfCountries ) {
                 if ( i.uppercase().contains(searchBar.text.toString().uppercase()) ) {
                     tempListOfCountries.add( i )

@@ -20,7 +20,8 @@
         android:id="@+id/profile_image"
         android:layout_width="500dp"
         android:layout_height="300dp"
-        android:src="@drawable/profile_image" />
+        android:src="@drawable/profile_image"
+        android:contentDescription="Zeeshan Virani" />
 
     <TextView
         android:id="@+id/profile_name"
